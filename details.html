@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading...</title>
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/details.css">
+
+    <script src="assets/js/details.js" defer></script>
+</head>
+<body>
+<header class=" mdc-top-app-bar mdc-top-app-bar--short mdc-top-app-bar--fixed">
+    <div class="mdc-top-app-bar__row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+            <button class="mdc-icon-button material-icons mdc-top-app-bar__action-item--unbounded" aria-label="Navigate up" onclick="window.location.replace('index.html')">arrow_back</button>
+            <span class="mdc-top-app-bar__title" id="title">Loading...</span>
+        </section>
+        <!--<section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
+            <button class="mdc-icon-button material-icons mdc-top-app-bar__action-item--unbounded" aria-label="Filter countries">search</button>
+            <button class="mdc-icon-button material-icons mdc-top-app-bar__action-item--unbounded" aria-label="Music player">music_note</button>
+            <button class="mdc-icon-button material-icons mdc-top-app-bar__action-item--unbounded" aria-label="Open settings">settings</button>
+        </section>-->
+    </div>
+</header>
+<div class="mdc-top-app-bar--fixed-adjust" id="content">
+    <img id="flagImg" src="https://fonts.gstatic.com/s/i/materialicons/refresh/v7/24px.svg" onerror="this.src = 'https://fonts.gstatic.com/s/i/materialicons/refresh/v7/24px.svg'" alt="Country flag" draggable="false"/>
+    <div class="centered">
+        <h2 id="countryName">Loading...</h2>
+        <p id="totalCases"></p>
+        <p id="recoveries"></p>
+        <p id="deaths"></p>
+        <ul class="mdc-list"><li role="separator" class="mdc-list-divider"></li></ul>
+        <button class="mdc-button mdc-button--raised --font-product-sans" onclick="learnMore()"><span class="mdc-button__ripple"></span>MORE INFO</button>
+    </div>
+</div>
+</body>
+</html>

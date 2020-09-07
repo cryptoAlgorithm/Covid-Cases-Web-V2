@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/music.css">
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js" defer></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-storage.js" defer></script>
+
+    <script src="assets/js/music.js" defer></script>
+</head>
+<body>
+<header class=" mdc-top-app-bar mdc-top-app-bar--short mdc-top-app-bar--fixed">
+    <div class="mdc-top-app-bar__row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+            <button class="mdc-icon-button material-icons mdc-top-app-bar__action-item--unbounded" aria-label="Navigate up" onclick="window.location.replace('index.html')">arrow_back</button>
+            <span class="mdc-top-app-bar__title" id="title">Music</span>
+        </section>
+    </div>
+</header>
+
+<!-- MDC Snackbar -->
+<div class="mdc-snackbar">
+    <div class="mdc-snackbar__surface">
+        <div class="mdc-snackbar__label"
+             role="status"
+             aria-live="polite">
+        </div>
+        <div class="mdc-snackbar__actions">
+            <button type="button" class="mdc-button mdc-snackbar__action">
+                <div class="mdc-button__ripple"></div>
+                <span class="mdc-button__label"></span>
+            </button>
+            <button class="mdc-icon-button mdc-snackbar__dismiss material-icons" title="Dismiss">close</button>
+        </div>
+    </div>
+</div>
+
+<div class="mdc-top-app-bar--fixed-adjust" id="content">
+    <p class="centered">Select a song!</p>
+
+    <!-- Indeterminable MDC progress bar -->
+    <div role="progressbar" class="mdc-linear-progress" id="loadProgress">
+        <div class="mdc-linear-progress__buffering-dots"></div>
+        <div class="mdc-linear-progress__buffer"></div>
+        <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar">
+            <span class="mdc-linear-progress__bar-inner"></span>
+        </div>
+        <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
+            <span class="mdc-linear-progress__bar-inner"></span>
+        </div>
+    </div>
+
+    <!-- Music selection list -->
+    <ul class="mdc-list" id="musicList"></ul>
+
+    <div class="mdc-slider music-seekbar" tabindex="0" role="slider"
+         aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"
+         aria-label="Seekbar">
+        <div class="mdc-slider__track-container">
+            <div class="mdc-slider__track"></div>
+        </div>
+        <div class="mdc-slider__thumb-container">
+            <svg class="mdc-slider__thumb" width="21" height="21">
+                <circle cx="10.5" cy="10.5" r="7.875"></circle>
+            </svg>
+            <div class="mdc-slider__focus-ring"></div>
+        </div>
+    </div>
+
+    <label for="repeat-toggle" style="margin-left: 10px">Repeat</label>
+    <div class="mdc-switch" style="margin-left: 6px">
+        <div class="mdc-switch__track"></div>
+        <div class="mdc-switch__thumb-underlay">
+            <div class="mdc-switch__thumb"></div>
+            <input type="checkbox" id="repeat-toggle" class="mdc-switch__native-control" role="switch" aria-checked="true" checked disabled>
+        </div>
+    </div>
+</div>
+</body>
+</html>

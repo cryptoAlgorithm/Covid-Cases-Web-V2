@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 Cases</title>
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js" defer></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js" defer></script>
+
+    <script src="assets/js/index.js" defer></script>
+</head>
+<body>
+<header class=" mdc-top-app-bar mdc-top-app-bar--short mdc-top-app-bar--fixed">
+    <div class="mdc-top-app-bar__row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+            <span class="mdc-top-app-bar__title">Covid-19 Cases</span>
+        </section>
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
+            <label class="mdc-text-field mdc-text-field--filled mdc-text-field--with-leading-icon mdc-text-field--with-trailing-icon" id="search-bar" style="display: none">
+                <i class="material-icons mdc-text-field__icon mdc-text-field__icon--leading" style="color: lightgrey">search</i>
+                <input class="mdc-text-field__input" type="text" aria-labelledby="search-hint" style="color: white">
+                <i class="material-icons mdc-text-field__icon mdc-text-field__icon--trailing" tabindex="0" role="button" style="color: lightgrey"
+                   onclick="document.querySelector('#search-bar').style.display='none';document.querySelector('#actionButtons').style.display='inline-flex'">clear</i>
+                <span class="mdc-floating-label" id="search-hint" style="color: lightgrey">Country</span>
+                <div class="mdc-line-ripple"></div>
+            </label>
+            <div id="actionButtons" style="display: inline-flex">
+                <button class="mdc-icon-button material-icons mdc-top-app-bar__action-item--unbounded" aria-label="Filter countries"
+                        onclick="document.querySelector('#search-bar').style.display='inline-flex';document.querySelector('#actionButtons').style.display='none'">
+                    search
+                </button>
+                <button class="mdc-icon-button material-icons mdc-top-app-bar__action-item--unbounded" aria-label="Music player" onclick="window.location.href = 'music.html'">music_note</button>
+                <button class="mdc-icon-button material-icons mdc-top-app-bar__action-item--unbounded" aria-label="Open settings">settings</button>
+            </div>
+        </section>
+    </div>
+</header>
+<!-- Indeterminable MDC progress bar -->
+<div role="progressbar" class="mdc-linear-progress load-progress-bar" id="loadProgress">
+    <div class="mdc-linear-progress__buffering-dots"></div>
+    <div class="mdc-linear-progress__buffer"></div>
+    <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar">
+        <span class="mdc-linear-progress__bar-inner"></span>
+    </div>
+    <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
+        <span class="mdc-linear-progress__bar-inner"></span>
+    </div>
+</div>
+
+<!-- MDC Snackbar -->
+<div class="mdc-snackbar">
+    <div class="mdc-snackbar__surface">
+        <div class="mdc-snackbar__label"
+             role="status"
+             aria-live="polite">
+        </div>
+        <div class="mdc-snackbar__actions">
+            <button type="button" class="mdc-button mdc-snackbar__action">
+                <div class="mdc-button__ripple"></div>
+                <span class="mdc-button__label"></span>
+            </button>
+            <button class="mdc-icon-button mdc-snackbar__dismiss material-icons" title="Dismiss">close</button>
+        </div>
+    </div>
+</div>
+
+<!-- FAB for reloading page at bottom right -->
+<button class="mdc-fab refresh-fab" aria-label="Refresh cases data" onclick="refreshData()">
+    <div class="mdc-fab__ripple"></div>
+    <span class="mdc-fab__icon material-icons">refresh</span>
+</button>
+
+<div class="mdc-top-app-bar--fixed-adjust" id="content">
+    <!-- Main countries list -->
+    <ul class="mdc-list mdc-list--two-line" id="contentList"></ul>
+</div>
+</body>
+</html>

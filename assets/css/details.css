@@ -1,0 +1,8 @@
+#flagImg {
+    display: block;
+    margin: 20px auto 0 auto;
+    width: auto; height: auto;
+    max-width: 100%;
+    text-align: center;
+    border-radius: 7px;
+}

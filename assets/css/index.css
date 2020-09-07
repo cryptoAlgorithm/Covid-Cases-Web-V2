@@ -1,0 +1,33 @@
+.listFlag {
+    height: auto;
+    min-width: 28vw;
+    max-height: calc(100% + 8vw);
+    border-radius: 4px;
+    text-align: center;
+    margin: 0.781vh 0 0.781vh 16.66vw;
+}
+.textArea {
+    margin-left: 60px;
+}
+
+/* Content div has too much top padding */
+.mdc-top-app-bar--fixed-adjust {
+    padding-top: 56px;
+}
+.load-progress-bar {
+    position: fixed;
+    top: 52px;
+    z-index: 5;
+}
+.refresh-fab {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 5;
+}
+.mdc-linear-progress {
+    --mdc-theme-primary: #1565c0;
+}
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    background-color: #00000000;
+}

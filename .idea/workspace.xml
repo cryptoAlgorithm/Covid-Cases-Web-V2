@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e4225431-7bf8-4c4a-9021-caeef32746e7" name="Default Changelist" comment="Initial Commit">
+      <change afterPath="$PROJECT_DIR$/.firebaserc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/covidCases.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/details.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/music.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/productSans.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/details.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/music.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/firebase.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1gzlzNLm9oHJdSlsXFpJ1TMRvJg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="SCSS" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Vincent Kwok\WebstormProjects\covidCases\assets\js" />
+      <recent name="C:\Users\Vincent Kwok\WebstormProjects\covidCases\assets" />
+      <recent name="C:\Users\Vincent Kwok\WebstormProjects\covidCases\assets\fonts" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Chrome Debugging" type="ChromiumRemoteDebugType" factoryName="Chromium Remote" port="9229">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e4225431-7bf8-4c4a-9021-caeef32746e7" name="Default Changelist" comment="" />
+      <created>1599125564299</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599125564299</updated>
+      <workItem from="1599125565992" duration="35729000" />
+      <workItem from="1599234750980" duration="679000" />
+      <workItem from="1599451452238" duration="457000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="96" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599209860428">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="96" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1599209860428" />
+    <state x="420" y="102" key="FileChooserDialogImpl" timestamp="1599125652347">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="420" y="102" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1599125652347" />
+    <state x="517" y="259" width="472" height="202" key="Github.ShareDialog" timestamp="1599451736487">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="517" y="259" width="472" height="202" key="Github.ShareDialog/0.0.1280.720@0.0.1280.720" timestamp="1599451736487" />
+    <state x="413" y="65" key="Github.UntrackedFilesDialog" timestamp="1599451745809">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="413" y="65" key="Github.UntrackedFilesDialog/0.0.1280.720@0.0.1280.720" timestamp="1599451745809" />
+    <state width="1281" height="228" key="GridCell.Tab.0.bottom" timestamp="1599210162180">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1281" height="228" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1599210162180" />
+    <state width="1281" height="228" key="GridCell.Tab.0.center" timestamp="1599210162180">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1281" height="228" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1599210162180" />
+    <state width="1281" height="228" key="GridCell.Tab.0.left" timestamp="1599210162180">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1281" height="228" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1599210162180" />
+    <state width="1281" height="228" key="GridCell.Tab.0.right" timestamp="1599210162180">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1281" height="228" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1599210162180" />
+    <state width="1281" height="228" key="GridCell.Tab.1.bottom" timestamp="1599210162180">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1281" height="228" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1599210162180" />
+    <state width="1281" height="228" key="GridCell.Tab.1.center" timestamp="1599210162180">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1281" height="228" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1599210162180" />
+    <state width="1281" height="228" key="GridCell.Tab.1.left" timestamp="1599210162180">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1281" height="228" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1599210162180" />
+    <state width="1281" height="228" key="GridCell.Tab.1.right" timestamp="1599210162180">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1281" height="228" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1599210162180" />
+    <state width="1281" height="228" key="GridCell.Tab.2.bottom" timestamp="1599210162180">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1281" height="228" key="GridCell.Tab.2.bottom/0.0.1280.720@0.0.1280.720" timestamp="1599210162180" />
+    <state width="1281" height="228" key="GridCell.Tab.2.center" timestamp="1599210162180">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1281" height="228" key="GridCell.Tab.2.center/0.0.1280.720@0.0.1280.720" timestamp="1599210162180" />
+    <state width="1281" height="228" key="GridCell.Tab.2.left" timestamp="1599210162180">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1281" height="228" key="GridCell.Tab.2.left/0.0.1280.720@0.0.1280.720" timestamp="1599210162180" />
+    <state width="1281" height="228" key="GridCell.Tab.2.right" timestamp="1599210162180">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1281" height="228" key="GridCell.Tab.2.right/0.0.1280.720@0.0.1280.720" timestamp="1599210162180" />
+    <state width="1281" height="228" key="GridCell.Tab.3.bottom" timestamp="1599210162181">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1281" height="228" key="GridCell.Tab.3.bottom/0.0.1280.720@0.0.1280.720" timestamp="1599210162181" />
+    <state width="1281" height="228" key="GridCell.Tab.3.center" timestamp="1599210162181">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1281" height="228" key="GridCell.Tab.3.center/0.0.1280.720@0.0.1280.720" timestamp="1599210162181" />
+    <state width="1281" height="228" key="GridCell.Tab.3.left" timestamp="1599210162181">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1281" height="228" key="GridCell.Tab.3.left/0.0.1280.720@0.0.1280.720" timestamp="1599210162181" />
+    <state width="1281" height="228" key="GridCell.Tab.3.right" timestamp="1599210162181">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1281" height="228" key="GridCell.Tab.3.right/0.0.1280.720@0.0.1280.720" timestamp="1599210162181" />
+    <state x="95" y="0" key="SettingsEditor" timestamp="1599128256781">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="95" y="0" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1599128256781" />
+    <state x="297" y="163" key="run.anything.popup" timestamp="1599125582407">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="297" y="163" key="run.anything.popup/0.0.1280.720@0.0.1280.720" timestamp="1599125582407" />
+    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1599144069295">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1599144069295" />
+  </component>
+</project>

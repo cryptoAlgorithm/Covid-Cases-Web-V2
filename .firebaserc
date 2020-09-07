@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "nush-hackathon"
+  },
+  "targets": {
+    "nush-hackathon": {
+      "hosting": {
+        "covidcases": [
+          "covidcases"
+        ]
+      }
+    }
+  }
+}
