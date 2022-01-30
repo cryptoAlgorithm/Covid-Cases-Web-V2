@@ -36,24 +36,19 @@ const loadBar = mdc.linearProgress.MDCLinearProgress.attachTo(document.getElemen
 loadBar.determinate = false;
 
 // Init repeat switch
-new mdc.switchControl.MDCSwitch(document.querySelector('.mdc-switch'));
-const checkbox = document.querySelector('#repeat-toggle');
-checkbox.addEventListener('click', () => {
-    audio.loop = checkbox.checked;
-});
+const checkbox = new mdc.switchControl.MDCSwitch(document.querySelector('#repeat-toggle'));
 
 let audio = null;
 
-rootRef.listAll().then(function(res) {
+const loadMusic = () => rootRef.listAll().then(function(res) {
+    loadBar.determinate = true;
+    loadBar.close();
+
     const divider = document.createElement('li')
     songList.appendChild(divider)
     divider.setAttribute('role', 'separator')
     divider.setAttribute('class', 'mdc-list-divider')
 
-    res.prefixes.forEach(function(folderRef) {
-        // All the prefixes under listRef.
-        // You may call listAll() recursively on them.
-    });
     res.items.forEach(function(item) {
         // All the items under listRef.
         const songName = capitaliseWords(item.name.replace(/_/gi, " ")).replace(/\.[^/.]+$/, "")
@@ -78,11 +73,19 @@ rootRef.listAll().then(function(res) {
 
         li.onclick = function() {
             item.getDownloadURL().then(function (url) {
+                slider.setDisabled(false);
                 if (audio == null) {
                     audio = new Audio(url.toString());
-                    audio.loop = checkbox.checked;
-                    checkbox.disabled = false;
                     audio.onended = function() {
+                        if (checkbox.selected) {
+                            audio.currentTime = 0;
+                            audio.play();
+                        }
+                        else {
+                            slider.setValue(0);
+                            slider.setDisabled(true);
+                            audio = null;
+                        }
                     }
                 }
                 else {
@@ -100,15 +103,17 @@ rootRef.listAll().then(function(res) {
     snackbar.labelText = "Error getting list of music";
     snackbar.open();
 });
-loadBar.close();
 
-const slider = new mdc.slider.MDCSlider(document.querySelector('.mdc-slider'));
-slider.listen('MDCSlider:change', () => {
+const slider = new mdc.slider.MDCSlider(document.getElementById('seekbar'));
+slider.setDisabled(true);
+slider.listen('MDCSlider:change', ev => {
+    console.log(ev.detail.value);
     if (audio != null) {
-        audio.currentTime = slider.value/100.0*audio.duration;
+        audio.currentTime = ev.detail.value/100.0*audio.duration;
         if (audio.paused) {audio.play()}
     }
 });
+
 // Init snackbar
 const snackbar = new mdc.snackbar.MDCSnackbar(document.querySelector('.mdc-snackbar'));
 // Emulate Android snackbar constants
@@ -118,11 +123,13 @@ const LENGTH_LONG = 6000;
 function updateSliderPos() {
     if (audio != null && !audio.paused) {
         slider.disabled = false;
-        slider.value = audio.currentTime / audio.duration * 100.0;
+        slider.setValue(audio.currentTime / audio.duration * 100.0);
     }
     else {
         slider.disabled = true;
     }
 }
 
-setInterval(updateSliderPos, 1000)
+setInterval(updateSliderPos, 1000);
+
+window.onload = loadMusic;
